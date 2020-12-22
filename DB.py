@@ -26,6 +26,16 @@ try:
                                     port = "5432",
                                     
                                     )
+    
+
+    dvdrental = psycopg2.connect(database = "dvdrental",
+                                    user = "postgres",
+                                    password = "12345678",
+                                    host= "localhost",
+                                    port = "5432",
+                                    
+                                    )
+
     DB1 = NewPracticeDB.cursor()
 
    
@@ -34,6 +44,8 @@ try:
     DB2 = postgres.cursor()
 
     DB3 = NewPracticeDB2.cursor()
+
+    DB4 = dvdrental.cursor()
 
 
 
